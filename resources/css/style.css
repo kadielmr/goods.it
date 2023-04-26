@@ -1,0 +1,302 @@
+/* 𝗟𝗘 𝗕𝗔𝗦𝗜 */
+:root{
+    --main: rgb(228, 170, 59);
+    --sec: rgba(241, 241, 241, 0.925);
+    --texts:rgba(79, 79, 79, 0.849);
+    --white:rgb(253, 253, 253);
+    --blue: rgb(8, 10, 44);
+}
+
+.bgMain{
+    background-color: var(--main);
+}
+.bgGrey{
+    background-color: var(--sec);
+}
+.bgBlack{
+    background-color: var(--texts);
+}
+.bgWhite{
+    background-color: var(--white);
+}
+.bgBlue{
+    background-color: var(--blue);
+}
+.textMain{
+    color: var(--main);
+}
+.textGrey{
+    color: var(--sec);
+}
+.textBlack{
+    color: var(--texts);
+}
+.textWhite{
+    color: var(--white);
+}
+.textBlue{
+    color: var(--blue);
+}
+.borderMain{
+    border-color: rgb(228, 170, 59);
+    border: 2px solid;
+}
+.borderGrey{
+    border-color: var(--sec);
+    border: 1px solid;
+}
+.borderBlack{
+    border-color: var(--texts);
+    border: 2px solid;
+}
+.borderWhite{
+    border-color: var(--white);
+    border: 2px solid;
+}
+.borderBlue{
+    border-color: var(--blue);
+    border: 2px solid;
+}
+*{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--texts);
+}
+a{
+    color: var(--texts);
+}
+h1{
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: var(--white);
+    
+}
+h2, h3{
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--blue);  
+}
+h4, h5{
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--blue);
+    letter-spacing: 0.5px;
+}
+
+
+/* 𝗡𝗔𝗩𝗕𝗔𝗥 */
+.nav-link{
+    color: var(--blue);
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+}
+.navbar-toggler:focus{
+    border: 0px;
+    outline: none;
+}
+
+#mainNav{
+    z-index: 3;
+}
+.navscale{
+    transform: scale(97%);
+    transition: 1s;
+}
+.offcanvas{
+    height: 100vh;
+    padding: 12px;
+}
+.menu-button{
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    color: var(--blue);
+}
+.menu-button:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.btnAnnuncio:hover > .fa-square-plus{
+    color: var(--white);
+}
+.btnAnnuncio:hover{
+    border: 2px solid var(--white);
+    color: var(--white);
+    background-color:var(--main);
+}
+.dropCategory{
+    text-transform: uppercase;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 600;
+    line-height: 200%;
+    font-size: 20px;
+}
+.drop-user::before{
+    content:'';
+    position:absolute;
+    width:1px;
+    height:1px;
+    border:8px solid transparent;
+    border-bottom-color: var(--blue);
+    left:50%;
+    top:-16px;
+    margin-left:-7px;
+}
+.drop-user {
+    position: absolute;
+    margin-left: -80px!important;  
+    margin-top: 8px!important;
+    min-width: 180px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+/* 
+𝗳𝗼𝗿𝗺𝗻𝗮𝘃𝗯𝗮𝗿 */
+
+.searchform{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.inputsearch{
+    position: relative;
+    border: 2px solid rgb(33, 33, 33);
+    border-radius: 30px;
+    padding: 20px;
+    width: 45vw;
+    height: 47px;
+    outline: none !important;
+    transition: 0.6s linear;
+}
+.btnsearch{
+    position: absolute;
+    padding: 10px;
+    background-color: transparent;
+    margin-right: 10px;
+    color: var(--sec);
+}
+.inputsearch:focus{
+    outline: none;
+    border: 2px solid var(--main);
+    box-shadow: none;
+}
+
+.headerCus{
+    background-image: url("media/img10.jpg");
+    background-size: cover;
+    background-position: start;
+    background-repeat: no-repeat;
+}
+.headerMargin{
+    padding-top: 87px;
+}
+.alertCus{
+    padding: 50px;
+    position: absolute;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+/* 𝗜𝗠𝗚 𝗖𝗔𝗧𝗘𝗚𝗢𝗥𝗬 𝗛𝗢𝗠𝗘 */
+.imgCategory{
+    width: 220px;
+    transition: linear 0.3s;
+}
+.imgCategory:hover{
+    opacity: 70%;
+    transition: linear 0.3s;
+}
+
+/* 𝗙𝗢𝗢𝗧𝗘𝗥 */
+.footer{
+    position:absolute;
+    z-index: -1;   
+}
+/* 𝗶𝗻𝗽𝘂𝘁 𝗮𝗻𝗻𝘂𝗻𝗰𝗶 */
+.inputAd{
+    outline: none;
+    background-color: transparent;
+    border-radius: 0;
+    border: none; 
+    border-bottom: 1px rgb(120, 119, 119) solid;
+    box-shadow: none;
+    width: 50%;
+}
+.inputAd:focus{
+    background-color: transparent;
+    outline: none;
+    border-bottom: 2px rgb(106, 106, 106) solid;
+    box-shadow: none;
+}
+.careersHeader{
+    background-image: url("./media/career1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+/* 𝗰𝗼𝗻𝘁𝗲𝗻𝘂𝘁𝗼 𝗽𝗿𝗶𝗺𝗮 𝗱𝗲𝗶 𝘁𝗶𝘁𝗼𝗹𝗶 */
+.roundContent::before{
+    content:'';
+    position:absolute;
+    border:120px solid var(--main);
+    left: -130px;
+    top: -35px;
+    transform: rotate(45deg);
+}
+.close-modale{
+    background: #363D4E;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding: 9px;
+    position: relative;
+    transition: transform 600ms;
+}
+
+/* 𝗰𝗹𝗼𝘀𝗲 𝗲𝗳𝗳𝗲𝗰𝘁 */
+
+.close-modale:hover{
+    transform: scale(110%);
+}
+.btn-close-white:hover{
+    -webkit-transform: rotate(360deg) scale(1.10);
+    -moz-transform: rotate(360deg) scale(1.10);
+    -ms-transform: rotate(360deg) scale(1.10);
+    -o-transform: rotate(360deg) scale(1.10);
+    transform: rotate(360deg) scale(1.10);
+    -webkit-transition: -webkit-transform 600ms;
+    -moz-transition: -moz-transform 600ms;
+    -ms-transition: -ms-transform 600ms;
+    -o-transition: -o-transform 600ms;
+    transition: transform 600ms;
+}
+.btn-close-white:focus{
+    outline: none;
+    box-shadow: none;
+}
+.btn-close-img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-right: 15px;
+}

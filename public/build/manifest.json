@@ -1,0 +1,20 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-43ce149f.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/media/career1.jpg": {
+    "file": "assets/career1-72607025.jpg",
+    "src": "resources/css/media/career1.jpg"
+  },
+  "resources/css/media/img10.jpg": {
+    "file": "assets/img10-92c1c99b.jpg",
+    "src": "resources/css/media/img10.jpg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-ab9f646d.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
